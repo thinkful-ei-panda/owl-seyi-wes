@@ -7,6 +7,8 @@ import ReactDOM from 'react-dom';
 // make the App component available
 import App from './App';
 
+import renderer from 'react-test-renderer';
+
 // this is the test case
 it('renders without crashing', () => {
   // first create a DOM element to render the component into
@@ -19,8 +21,10 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+it('renders the UI as expected', () => {
+  const tree = renderer
+    .create(<App />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();  
+  });
+
