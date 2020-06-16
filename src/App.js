@@ -1,6 +1,6 @@
 import React from 'react';
 
-function App() {
+function App(props) {
   return (
     <main className='App'>
       {/* content goes here */}
