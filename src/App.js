@@ -7,8 +7,8 @@ function App(props) {
   return (
     <main className='App'>
       <ParticipantList participants={props.participants}/>
-      <Stage />
-      <ChatLog />
+      <ChatLog chatEvents={props.chatEvents} participants={props.participants}/>
+      <Stage participants={props.participants}/>
     </main>
   );
 }

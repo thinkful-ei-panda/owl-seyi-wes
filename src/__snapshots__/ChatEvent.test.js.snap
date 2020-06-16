@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChatEvent renders the UI as expected 1`] = `
+<div
+  className="chat-event-container2 center"
+>
+  <div>
+    4:48 AM
+  </div>
+  <div
+    className="event"
+  >
+    Caty Flucker
+     gave a thumbs up
+  </div>
+</div>
+`;

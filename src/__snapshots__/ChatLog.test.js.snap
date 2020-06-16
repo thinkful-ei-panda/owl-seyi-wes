@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChatLog renders the UI as expected 1`] = `
+<section
+  className="chat-log"
+>
+  <div
+    className="chat-event-container"
+  >
+    <div
+      className="small"
+    >
+      <img
+        alt="avatar"
+        src="https://robohash.org/utlaborumfugit.jpg?size=200x200&set=set1"
+      />
+    </div>
+    <div>
+      <div>
+        Axe Kubicka
+        <span
+          className="time"
+        >
+          4:48 AM
+        </span>
+      </div>
+      <div>
+        Hello world
+      </div>
+    </div>
+  </div>
+  <div
+    className="chat-event-container2 center"
+  >
+    <div>
+      4:48 AM
+    </div>
+    <div
+      className="event"
+    >
+      Caty Flucker
+       gave a thumbs up
+    </div>
+  </div>
+  <div
+    className="chat-event-container2 center"
+  >
+    <div>
+      4:48 AM
+    </div>
+    <div
+      className="event"
+    >
+      Frank Runciman
+       gave a thumbs down
+    </div>
+  </div>
+  <div
+    className="chat-event-container2 center"
+  >
+    <div>
+      4:49 AM
+    </div>
+    <div
+      className="event"
+    >
+      Koren Templeton
+       raised their hand
+    </div>
+  </div>
+  <div
+    className="chat-event-container2 center"
+  >
+    <div>
+      4:49 AM
+    </div>
+    <div
+      className="event"
+    >
+      Koren Templeton
+       clapped
+    </div>
+  </div>
+  <div
+    className="chat-event-container2 center"
+  >
+    <div>
+      4:49 AM
+    </div>
+    <div
+      className="event"
+    >
+      Koren Templeton
+       joined
+    </div>
+  </div>
+  <div
+    className="chat-event-container2 center"
+  >
+    <div>
+      4:50 AM
+    </div>
+    <div
+      className="event"
+    >
+      Ashla Attwool
+       left the session
+    </div>
+  </div>
+  <div
+    className="chat-event-container2 center"
+  >
+    <div>
+      4:51 AM
+    </div>
+    <div
+      className="event"
+    >
+      Axe Kubicka
+       joined the stage
+    </div>
+  </div>
+  <div
+    className="chat-event-container2 center"
+  >
+    <div>
+      4:52 AM
+    </div>
+    <div
+      className="event"
+    >
+      Axe Kubicka
+       left the stage
+    </div>
+  </div>
+</section>
+`;

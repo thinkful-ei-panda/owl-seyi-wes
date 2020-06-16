@@ -11,3 +11,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+main{
+  display:flex;
+  flex-direction: row;
+}
+
+img{
+  width:100%;
+}
+
+.participant-list,.chat-log,.stage{
+  border:solid black 5px;
+}
+
+.participant-container,.chat-event-container{
+  display:flex;
+  flex-direction: row;
+}
+
+.chat-event-container{
+  padding: 3px 3px;
+}
+
+.center{
+  text-align:center;
+}
+
+.stage-name{
+  text-align: center;
+}
+
+.stage-participant-container div img{
+  padding: 0px 5px 80px 5px;
+}
+
+.small{
+  width:40px;
+}
+
+.time{
+  padding: 0px 10px;
+}
+
+.chat-event-container2{
+  display:flex;
+  flex-direction: column;
+}
+
+.event{
+  padding: 2px 0px 10px 0px;
+}

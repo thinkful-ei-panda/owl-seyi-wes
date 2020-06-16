@@ -3,12 +3,11 @@ import Participant from './Participant';
 
 function ParticipantList(props){
     return (
-        <>
+        <section className='participant-list'>
         {
-        props.participants.map((arrEle,index) => <Participant participant={props.participants[index]} />)
+        props.participants.map((arrEle,index) => <Participant key={props.participants[index].id} participant={props.participants[index]} />)
         }
-
-        </>
+        </section>
         
     )
 }

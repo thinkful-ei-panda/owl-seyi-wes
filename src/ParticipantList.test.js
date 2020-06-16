@@ -1,21 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-
-import renderer from 'react-test-renderer';
+import ParticipantList from './ParticipantList';
 import store from './store';
 
-describe('App', () => {
+import renderer from 'react-test-renderer';
+
+
+describe('Participant List', () => {
   it('renders without crashing', () => {
 
     const div = document.createElement('div');
-    ReactDOM.render(<App participants={store.participants} chatEvents={store.chatEvents}/>, div);
+    ReactDOM.render(<ParticipantList participants={[...store.participants]} />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 
   it('renders the UI as expected', () => {
     const tree = renderer
-      .create(<App participants={store.participants} chatEvents={store.chatEvents}/>)
+      .create(<ParticipantList participants={[...store.participants]} />)
       .toJSON();
     expect(tree).toMatchSnapshot();  
   });
