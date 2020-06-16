@@ -8,6 +8,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 import renderer from 'react-test-renderer';
+import store from './store';
 
 // this is the test case
 it('renders without crashing', () => {
@@ -23,7 +24,7 @@ it('renders without crashing', () => {
 
 it('renders the UI as expected', () => {
   const tree = renderer
-    .create(<App />)
+    .create(<App participants={store.participants} chatEvents={store.chatEvents}/>)
     .toJSON();
   expect(tree).toMatchSnapshot();  
   });
