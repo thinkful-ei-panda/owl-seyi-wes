@@ -1,9 +1,14 @@
 import React from 'react';
+import ParticipantList from './ParticipantList';
+import Stage from './Stage';
+import ChatLog from './ChatLog';
 
-function App() {
+function App(props) {
   return (
     <main className='App'>
-      {/* content goes here */}
+      <ParticipantList participants={props.participants}/>
+      <Stage />
+      <ChatLog />
     </main>
   );
 }

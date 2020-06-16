@@ -3,5 +3,7 @@
 exports[`renders the UI as expected 1`] = `
 <main
   className="App"
-/>
+>
+  test test test
+</main>
 `;
